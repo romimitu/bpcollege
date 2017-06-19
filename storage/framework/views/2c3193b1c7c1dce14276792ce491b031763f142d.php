@@ -59,7 +59,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 
                                             <?php echo Form::submit('Delete',['class'=>'btn btn-sm btn-danger']); ?>
 
-                                            <?php echo Form::close(); ?>                                        
+                                            <?php echo Form::close(); ?>      
                                         </td>
                                     </tr>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

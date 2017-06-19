@@ -13,7 +13,6 @@ class CreateNoticesTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('download_link')->nullable();
-            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

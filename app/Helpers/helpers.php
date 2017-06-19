@@ -5,13 +5,13 @@
         return (($array->currentPage()-1) * $array->perPage() + $arraykey + 1);
     }
 
-    function uploadFile($image,$request,$path='',$title='')
+    function uploadFile($file,$request,$path='',$title='')
     {
-        if($request->$image!=null)
+        if($request->$file!=null)
         {
-            $imageName = str_slug($title,'-').'-'.time() . '.' . $request->$image->getClientOriginalExtension();
-            $request->$image->move(public_path($path), $imageName);
-            return $path.$imageName;
+            $fileName = str_slug($title,'-').'-'.time() . '.' . $request->$file->getClientOriginalExtension();
+            $request->$file->move(public_path($path), $fileName);
+            return $path.$fileName;
         }
     }
     

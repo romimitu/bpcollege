@@ -29,8 +29,8 @@ class noticeController extends Controller
 
     public function store(NoticeRequest $request)
     {
-        $data = $request->except('image'); 
-        $data['image']=uploadFile('image',$request,'uploads/notice/');
+        $data = $request->except('download_link'); 
+        $data['download_link']=uploadFile('download_link',$request,'uploads/notice/');
         $notice = Notice::create($data);
         Session::flash('message','Added  Successfully');
         return redirect('/notice');  
@@ -47,8 +47,8 @@ class noticeController extends Controller
 
     public function update(NoticeRequest $request, Notice $notice)
     {
-        $data = $request->except('image'); 
-        $data['image']=uploadFile('image',$request,'uploads/notice/');
+        $data = $request->except('download_link'); 
+        $data['download_link']=uploadFile('download_link',$request,'uploads/notice/');
         $notice->update($data);
         Session::flash('message', 'Succesfully updated');
         return redirect('/notice');

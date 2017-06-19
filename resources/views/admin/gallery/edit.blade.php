@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('title')
-GOUR BAZAR ADMIN | BUY MANGO ONLINE
+BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 @endsection
 @section('content')
     <div class="page-content-wrapper">
@@ -10,7 +10,7 @@ GOUR BAZAR ADMIN | BUY MANGO ONLINE
             <div class="page-head">
                 <!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    <h1>GourBazar Gallery Panel</h1>
+                    <h1>Gallery Panel</h1>
                 </div>
                 <!-- END PAGE TITLE -->
             </div>

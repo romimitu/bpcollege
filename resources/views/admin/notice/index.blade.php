@@ -42,7 +42,6 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                         <th class="col-md-2">Title</th>
                                         <th class="col-md-3">description</th>
                                         <th class="col-md-2">Download</th>
-                                        <th class="col-md-2">image</th>
                                         <th class="col-md-2" colspan="2">Action</th>
                                     </tr>
                                 </thead>
@@ -52,8 +51,9 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                         <td>{{ $notice->id }}</td>
                                         <td>{{ $notice->title }}</td>
                                         <td>{{ $notice->description }}</td>
-                                        <td>{{ $notice->download_link }}</td>
-                                        <td><img src="/{{ $notice->image }}" class="img-responsive" alt=""></td>
+                                        @if($notice->download_link)
+                                        <td><a href="/{{ $notice->download_link }}">Attachment</a></td>
+                                        @endif
                                         <td class="align-middle">
                                             <a class="btn btn-sm btn-primary" href="{{ url('/notice/'.$notice->id.'/edit') }}">Edit</a>
                                         </td>

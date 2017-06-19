@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('title')
-GOUR BAZAR ADMIN | BUY MANGO ONLINE
+BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 @endsection
 @section('content')
     <div class="page-content-wrapper">

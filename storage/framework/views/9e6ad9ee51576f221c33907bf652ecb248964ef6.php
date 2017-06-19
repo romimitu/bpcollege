@@ -1,5 +1,5 @@
 <?php $__env->startSection('title'); ?>
-GOUR BAZAR ADMIN | BUY MANGO ONLINE
+BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="page-content-wrapper">

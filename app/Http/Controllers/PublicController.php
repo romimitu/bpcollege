@@ -4,29 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ServiceRequest;
-use App\Service;
+use App\Department;
 use App\Member;
 use App\Blog;
-use App\Product;
+use App\Notice;
 
 class PublicController extends Controller
 {
-    public function servicedetails($id, $slug)
+    public function allNews()
     {
-        $service = Service::find($id);
-        return view('public.service-single', ['service' => $service]);
+        $news = Blog::orderBy('created_at', 'asc')->paginate(12);
+        return view('public.news-events', ['news' => $news]);
     }
-
-    public function blogdetails($id, $slug)
+    public function newsDetails($id, $slug)
     {
-        $blog = Blog::find($id);
-        return view('public.blog-single', ['blog' => $blog]);
-    }
-
-    public function Productdetails($id, $slug)
-    {
-        $product = Product::find($id);
-        return view('public.product-single', ['product' => $product]);
+        $news = Blog::find($id);
+        return view('public.news-single', ['news' => $news]);
     }
 
     public function TeamMember()
@@ -35,10 +28,15 @@ class PublicController extends Controller
         return view('public.about-us', ['teams' => $teams]);
     }
 
-    public function allProduct()
+    public function allNotice()
     {
-        $products = Product::orderBy('created_at', 'asc')->paginate(12);
-        return view('public.shop', ['products' => $products]);
+        $notices = Notice::orderBy('created_at', 'asc')->paginate(12);
+        return view('public.notice', ['notices' => $notices]);
     }
 
+    public function SingleNotice($id, $slug)
+    {
+        $notice = Notice::find($id);
+        return view('public.notice-single', ['notice' => $notice]);
+    }
 }

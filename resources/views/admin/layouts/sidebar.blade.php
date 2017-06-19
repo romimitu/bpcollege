@@ -48,12 +48,12 @@
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="/media" class="nav-link ">
+                            <a href="/blog" class="nav-link ">
                                 <span class="title">All News</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="/media/create" class="nav-link ">
+                            <a href="/blog/create" class="nav-link ">
                                 <span class="title">Add News</span>
                             </a>
                         </li>

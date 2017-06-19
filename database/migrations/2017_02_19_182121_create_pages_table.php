@@ -14,8 +14,8 @@ class CreatePagesTable extends Migration
             $table->string('title');
             $table->text('details');
             $table->text('sub_details');
-            $table->text('image');
-            $table->text('background_image');
+            $table->text('image')->nullable();
+            $table->text('background_image')->nullable();
             $table->timestamps();
         });
     }

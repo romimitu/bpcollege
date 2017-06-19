@@ -62,7 +62,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                         <td class="align-middle">
                                             {!! Form::open([ 'method' => 'Delete', 'url' => ['/member', $member->id]]) !!}
                                             {!! Form::submit('Delete',['class'=>'btn btn-sm btn-danger']) !!}
-                                            {!! Form::close() !!}                                        
+                                            {!! Form::close() !!}      
                                         </td>
                                     </tr>
                                 @endforeach

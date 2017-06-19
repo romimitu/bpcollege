@@ -13,9 +13,9 @@ class ComposerStaticInitdd27e9af13532b5d8d7bf6455402c76c
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         'd21d43db5f6e840ee7b10744ec7fdf66' => __DIR__ . '/../..' . '/app/Helpers/helpers.php',
     );
 
@@ -279,10 +279,10 @@ class ComposerStaticInitdd27e9af13532b5d8d7bf6455402c76c
     );
 
     public static $classMap = array (
+        'CreateBlogsTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_160235_create_blogs_table.php',
         'CreateContactsTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_19_182255_create_contacts_table.php',
         'CreateDepartmentsTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_171034_create_departments_table.php',
         'CreateGalleriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_23_174026_create_galleries_table.php',
-        'CreateMediaTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_160235_create_media_table.php',
         'CreateMembersTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_19_182237_create_members_table.php',
         'CreateNoticesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_19_181906_create_notices_table.php',
         'CreatePagesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_19_182121_create_pages_table.php',
