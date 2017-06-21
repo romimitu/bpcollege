@@ -5,18 +5,16 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 @section('content')
 	<div id="banner-holder">
 		<ul class="home-slider large-screen-slider">
-			<li style="background-image: url(images/home-1472665733.jpg);"><div class="caption-container"><p> Bangabandhu   Mural, SUST</p></div></li>
-			<li style="background-image: url(images/home-1464450115.jpg);"><div class="caption-container"><p>One of the prestigious universities in Bangladesh with 7 Schools, 26 Departments, and many institutes.</p></div></li>
-			<li style="background-image: url(images/home-1464450101.jpg);"><div class="caption-container"><p>One of the prestigious universities in Bangladesh with 7 Schools, 26 Departments, and many institutes.</p></div></li>
-			<li style="background-image: url(images/home-1461490900.jpg);"><div class="caption-container"><p>One of the prestigious universities in Bangladesh with 7 Schools, 26 Departments, and many institutes.</p></div></li>
+			<li style="background-image: url(images/slider1.jpg);"><div class="caption-container"><p> Binodpur collage</p></div></li>
+			<li style="background-image: url(images/slider2.jpg);"><div class="caption-container"><p>....</p></div></li>
+			<li style="background-image: url(images/slider3.jpg);"><div class="caption-container"><p>Main Building</p></div></li>
 		</ul>
 		<!-- Mobile View Slider -->                   
     	<div class="home-mobile-slider">
             <ul class="slides">
-            	<li><img src="images/home-1472665733.jpg" alt=""></li>
-            	<li><img src="images/home-1464450115.jpg" alt=""></li>
-            	<li><img src="images/home-1464450101.jpg" alt=""></li>
-            	<li><img src="images/home-1461490900.jpg" alt=""></li>
+            	<li><img src="images/slider1.jpg" alt=""></li>
+            	<li><img src="images/slider2.jpg" alt=""></li>
+            	<li><img src="images/slider3.jpg" alt=""></li>
             </ul>
         </div>
         <!-- Mobile Slider End -->  
@@ -27,8 +25,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 				<div class="col-xs-12 col-sm-3 col-md-3">
 					<!-- Nav tabs -->
 					<ul class="tab-nav">
-						<li id="overview-li" class="active"><a href="#overview" data-toggle="tab"><i class="fa fa-cube"></i><h6>Overview</h6></a></li>
-						<li id="achievement-li"><a href="#achivements" data-toggle="tab"><i class="fa fa-gift"></i><h6>Achievements</h6></a></li>
+						<li id="overview-li" class="active"><a href="#overview" data-toggle="tab"><i class="fa fa-cube"></i><h6>আমাদের সম্পর্কে</h6></a></li>
+						<li id="achievement-li"><a href="#achivements" data-toggle="tab"><i class="fa fa-gift"></i><h6>অধ্যক্ষ এর কথা</h6></a></li>
 					</ul>
 				</div><!-- End .col -->
 				<div class="col-xs-12 col-sm-6 col-md-6">
@@ -36,13 +34,13 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 					<div id="home-tab-content" class="tab-content">
 						<div class="tab-pane fade in active" id="overview">
 							<!-- <h1>Overview</h1> -->
-							<p>Shahjalal University of Science and Technology (SUST) was established in 1987. The only university of its kind at that time, it started it's journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 26 departments and a number of institutes and centres. The number of teachers has grown to 487 and the students to 9262. Besides, the University has 8 affiliated medical colleges under the School of Medical Sciences with 2744 students. </p>
-							<a class="more" href="about.html">Discover More</a>
+							<p>চাঁপাইনবাবগঞ্জ জেলার শিবগঞ্জ উপজেলাধীন ৮নং বিনোদপুর উনিয়নের অর্ন্তগত লছমানপুর গ্রামে বিনোদপুর কলেজ অবস্থিত। এই কলেজ ১৯৮৬ সালে স্থাপিত হয়।<br>বর্তমানে ২.৭৯ একর জমির উপর ৩টি পাঁকা ভবন, ১টি দ্বীতল ভবন এবং ২টি টিন সেট ভবন আছে। এই কলেজের চারপাশে আমবাগান এবং একটি পাঁকা রাস্তা আছে।</p>
+							<a class="more" href="/overview">আরো পড়ুন </a>
 						</div><!-- END .tab-pane #research -->
 						<div class="tab-pane fade" id="achivements">
-							<h1>Achievements</h1>
+							<h1>অধ্যক্ষ এর কথা</h1>
 							<p>Through research, academic, and various extra- curricular activities, Shahjalal University of Science & Technology faculty and students achieved many awards and recognition. </p>
-							<a class="more" href="about/achievements.html">Discover More</a>
+							<a class="more" href="about/">আরো পড়ুন </a>
 						</div><!-- END .tab-pane #achivements -->
 					</div><!-- END .tab-content -->
 				</div><!-- End .col -->
@@ -53,26 +51,80 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 	<div id="academics-holder">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<ul id="schools-ul" class="large-view">
-						<li class="active"><a href="#" data-id="sc-id-2" data-title="Departments from School of Applied Sciences & Technology"><i class="fa fa-book"></i><span>Applied Sciences & Technology</span></a></li>
-					</ul>
+				<div class="col-sm-offset-2 col-sm-8">					
 					<div id="dept-list-container" class="large-view">
-						<h3>Departments from School of Applied Science &amp; Technology</h3>
-						<ul id="sc-id-2" class="active department-list">
-							<li id="dept-1"><a href="d/arc.html"><img src="uploads/icons/architecture.png"><span>Architecture</span></a></li>
-							<li id="dept-1"><a href="d/cep.html"><img src="uploads/icons/chemical-engineering.png"><span>Chemical Engineering & Polymer Science</span></a></li>
-						</ul>
+						<h3>Binodpur Collage Facts</h3>
+						<div class="dynamic-content-holder">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<td>Established:</td>
+										<td>1986</td>
+									</tr>
+									<tr>
+										<td>Area:</td>
+										<td>189 hundredth</td>
+									</tr>
+									<tr>
+										<td>Location:</td>
+										<td>Binodpur, Shibgonj, Chapainawabganj</td>
+									</tr>
+									<tr>
+										<td>Courses:</td>
+										<td>HSC, BA, BSS, BBS</td>
+									</tr>
+									<tr>
+										<td>Teachers:</td>
+										<td>50</td>
+									</tr>
+									<tr>
+										<td>Staff:</td>
+										<td>28</td>
+									</tr>
+									<tr>
+										<td>Students:</td>
+										<td>1229</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<ul id="schools-ul" class="mobile-view">
-						<li class="active"><a href="#" data-id="mobile-sc-id-2" data-title="Departments from School of Applied Sciences & Technology" id="schools-a-nav-2"><i class="fa fa-book"></i><span>Applied Sciences & Technology</span></a></li>
-					</ul>
 					<div id="dept-list-container" class="mobile-view">
-						<h3>Departments from School of Applied Science &amp; Technology</h3>
-						<ul id="mobile-sc-id-2" class="active department-list">
-							<li id="dept-1"><a href="d/arc/1.html"><img src="uploads/icons/architecture.png"><span>Architecture</span></a></li>
-							<li id="dept-1"><a href="d/cep/2.html"><img src="uploads/icons/chemical-engineering.png"><span>Chemical Engineering & Polymer Science</span></a></li>
-						</ul>
+						<h3>Binodpur Collage Facts</h3>
+						<div class="dynamic-content-holder">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<td>Established:</td>
+										<td>1986</td>
+									</tr>
+									<tr>
+										<td>Area:</td>
+										<td>189 hundredth</td>
+									</tr>
+									<tr>
+										<td>Location:</td>
+										<td>Binodpur, Shibgonj, Chapainawabganj</td>
+									</tr>
+									<tr>
+										<td>Courses:</td>
+										<td>HSC, BA, BSS, BBS</td>
+									</tr>
+									<tr>
+										<td>Teachers:</td>
+										<td>50</td>
+									</tr>
+									<tr>
+										<td>Staff:</td>
+										<td>28</td>
+									</tr>
+									<tr>
+										<td>Students:</td>
+										<td>1229</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div><!-- End .col -->
 			</div><!-- End .row -->

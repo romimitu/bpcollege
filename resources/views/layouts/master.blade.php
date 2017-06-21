@@ -12,12 +12,15 @@
 	<link href="/css/bxslider.css" rel="stylesheet">
 	<!-- Mobile menu -->
 	<link href="/css/jquery.mmenu.all.css" type="text/css" rel="stylesheet">
+	<link href="/css/prettyPhoto.css" type="text/css" rel="stylesheet">
+	<link href="/css/og-grid-component.css" type="text/css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/css/font-awesome.css" rel="stylesheet">
     <link href="/css/style-responsive.css" rel="stylesheet">
 	<!-- JS Min  -->
 	<script src="/js/jquery-1.8.2.min.js"></script>
+	<script src="/js/modernizr.min.js"></script>
 </head>	
 <body>	
 	@include('layouts.menu')
@@ -30,6 +33,9 @@
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/jquery.bxslider.js" type="text/javascript"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/grid.js"></script>
+    <script src="/js/jquery.validate.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
     <!-- Mobile Menu -->
 	<script src="/js/jquery.mmenu.min.all.js" type="text/javascript"></script>
 	<script type="text/javascript">

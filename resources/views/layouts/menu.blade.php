@@ -41,7 +41,7 @@
 							<li class="active"><a href="/">Home</a></li>
 							<li>
 								<a href="/overview" class="has-sub">About Us</a>
-								<div class="small-sub-nav">
+								<div class="small-sub-nav single-nav">
 									<ul>
 										<li class=""><a href="/overview"><span>Overview</span></a></li>
 										<li class=""><a href="/facts-acts"><span>University Facts &amp; Acts</span></a></li>

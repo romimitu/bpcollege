@@ -25,7 +25,7 @@ class PublicController extends Controller
     public function TeamMember()
     {
         $teams = Member::orderBy('created_at', 'asc')->paginate(7);
-        return view('public.about-us', ['teams' => $teams]);
+        return view('public.member', ['teams' => $teams]);
     }
 
     public function allNotice()

@@ -47,7 +47,7 @@ Route::get('/notice-board/{id}/{slug}', 'PublicController@SingleNotice');
 
 Route::get('/news-events', 'PublicController@allNews');
 Route::get('/news-events/{id}/{slug}', 'PublicController@newsDetails');
-
+Route::get('/member', 'PublicController@TeamMember');
 Route::get('/location', function () {
     return view('public.location');
 });
