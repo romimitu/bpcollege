@@ -8,8 +8,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 <div id="department">
 	<div class="container">
 		<div id="banner-holder" class="transparent-banner">
-			<h2 id="dept-title">About Us</h2>
-			<div class="breadcrumb"><a href="/overview">About Us</a> / Notice Board</div>
+			<h2 id="dept-title">আমাদের সম্পর্কে</h2>
+			<div class="breadcrumb"><a href="/overview">আমাদের সম্পর্কে</a> / নোটিশ বোর্ড</div>
 		</div><!-- End #banner-holder -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -17,8 +17,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 					<?php echo $__env->make('layouts.sidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 					<div class="department-section">
 						<div class="department-overview">
-							<h2 id="mobile-dept-title" class="mobile-view">About Us</h2>
-							<h2>Notice Board</h2>
+							<h2 id="mobile-dept-title" class="mobile-view">আমাদের সম্পর্কে</h2>
+							<h2>নোটিশ বোর্ড</h2>
 							<h3 class="news-detail-headline"><?php echo e($notice->title); ?></h3>
 							<h4 class="news-detail-date">Date : <?php echo e($notice->created_at->format('j M y')); ?></h4>
 							<?php echo $notice->description; ?>

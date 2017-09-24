@@ -21,6 +21,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<h2>নিউজ ও ইভেন্টস</h2>
 							<h3 class="news-detail-headline">{{$news->title}}</h3>
 							<h4 class="news-detail-date">Date: {{$news->created_at->format('j M y')}}</h4>
+							<img src="/{{$news->image}}" alt="{{$news->title}}" class="img-responsive">
 							{!!$news->description!!}
 						</div><!-- End .department-overview -->
 					</div><!-- End .department-section -->

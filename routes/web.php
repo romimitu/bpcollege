@@ -45,9 +45,14 @@ Route::get('/mission', function () {
 Route::get('/notice-board', 'PublicController@allNotice');
 Route::get('/notice-board/{id}/{slug}', 'PublicController@SingleNotice');
 
+Route::get('/photo-gallery', 'PublicController@PhotoGallery');
+
 Route::get('/news-events', 'PublicController@allNews');
 Route::get('/news-events/{id}/{slug}', 'PublicController@newsDetails');
-Route::get('/member', 'PublicController@TeamMember');
+Route::get('/staff', 'PublicController@TeamMember');
 Route::get('/location', function () {
     return view('public.location');
+});
+Route::get('/contact', function () {
+    return view('public.contact-us');
 });

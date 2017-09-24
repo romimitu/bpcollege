@@ -38,7 +38,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<a class="more" href="/overview">আরো পড়ুন </a>
 						</div><!-- END .tab-pane #research -->
 						<div class="tab-pane fade" id="achivements">
-							<h1>Achievements</h1>
+							<h1>অধ্যক্ষ এর কথা</h1>
 							<p>Through research, academic, and various extra- curricular activities, Shahjalal University of Science & Technology faculty and students achieved many awards and recognition. </p>
 							<a class="more" href="about/">আরো পড়ুন </a>
 						</div><!-- END .tab-pane #achivements -->
@@ -141,39 +141,42 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<div>
 								<h2>News &amp; Events</h2>
 								<ul class="news">
+								<?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>								
 									<li>
 										<div>
 											<div class="date">
-												<div>28 <span>Dec 16</span></div>
+												<div><?php echo e($blog->created_at->format('j')); ?> <span><?php echo e($blog->created_at->format('M y')); ?></span></div>
 											</div>
-											<div class="desc">
-												
-												<p>শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ভাইস চ্যান্সেলরের নেতৃত্বে সিন্ডিকেটের প্রতিনিধি দলের মহামান্য রাষ্ট্রপতির সঙ্গে সাক্ষাৎ </p>
-												<a href="about/news-and-events-detail/48.html">Read More</a>
+											<div class="desc">												
+												<p><?php echo e($blog->title); ?></p>
+												<a href="<?php echo e(url('news-events', [$blog->id, make_slug($blog->title)] )); ?>">Read More</a>
 											</div>
 										</div>
 									</li>
+								<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 								</ul>
-								<a class="more" href="about/news-and-events.html">View All News</a>
+								<a class="more" href="/news-events">View All News</a>
 							</div>
 						</li>
 						<li>
 							<div>
 								<h2>Notice Board</h2>
-								<ul class="news">
+								<ul class="news">								
+								<?php $__currentLoopData = $allnotice; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $notice): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>	
 									<li>
 										<div>
 											<div class="date">
-												<div>23 <span>Jan 17</span></div>
+												<div><?php echo e($notice->created_at->format('j')); ?> <span><?php echo e($notice->created_at->format('M y')); ?></span></div>
 											</div>
 											<div class="desc">
-												<p>1st Year 1st Semester Orientation (2016-2017)</p>
-												<a href="about/notice-board-detail/53.html">Read More</a>
+												<p><?php echo e($notice->title); ?></p>
+												<a href="<?php echo e(url('notice-board', [$notice->id, make_slug($notice->title)] )); ?>">Read More</a>
 											</div>
 										</div>
-									</li>									
+									</li>
+								<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>									
 								</ul>
-								<a class="more" href="about/notice-board.html">View All Notices</a>
+								<a class="more" href="/notice-board">View All Notices</a>
 							</div>
 						</li>
 					</ul>

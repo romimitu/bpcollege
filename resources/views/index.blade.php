@@ -141,39 +141,42 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<div>
 								<h2>News &amp; Events</h2>
 								<ul class="news">
+								@foreach($blogs as $blog)								
 									<li>
 										<div>
 											<div class="date">
-												<div>28 <span>Dec 16</span></div>
+												<div>{{ $blog->created_at->format('j') }} <span>{{ $blog->created_at->format('M y') }}</span></div>
 											</div>
-											<div class="desc">
-												
-												<p>শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের ভাইস চ্যান্সেলরের নেতৃত্বে সিন্ডিকেটের প্রতিনিধি দলের মহামান্য রাষ্ট্রপতির সঙ্গে সাক্ষাৎ </p>
-												<a href="about/news-and-events-detail/48.html">Read More</a>
+											<div class="desc">												
+												<p>{{$blog->title}}</p>
+												<a href="{{ url('news-events', [$blog->id, make_slug($blog->title)] )}}">Read More</a>
 											</div>
 										</div>
 									</li>
+								@endforeach
 								</ul>
-								<a class="more" href="about/news-and-events.html">View All News</a>
+								<a class="more" href="/news-events">View All News</a>
 							</div>
 						</li>
 						<li>
 							<div>
 								<h2>Notice Board</h2>
-								<ul class="news">
+								<ul class="news">								
+								@foreach($allnotice as $notice)	
 									<li>
 										<div>
 											<div class="date">
-												<div>23 <span>Jan 17</span></div>
+												<div>{{ $notice->created_at->format('j') }} <span>{{ $notice->created_at->format('M y') }}</span></div>
 											</div>
 											<div class="desc">
-												<p>1st Year 1st Semester Orientation (2016-2017)</p>
-												<a href="about/notice-board-detail/53.html">Read More</a>
+												<p>{{$notice->title}}</p>
+												<a href="{{ url('notice-board', [$notice->id, make_slug($notice->title)] )}}">Read More</a>
 											</div>
 										</div>
-									</li>									
+									</li>
+								@endforeach									
 								</ul>
-								<a class="more" href="about/notice-board.html">View All Notices</a>
+								<a class="more" href="/notice-board">View All Notices</a>
 							</div>
 						</li>
 					</ul>

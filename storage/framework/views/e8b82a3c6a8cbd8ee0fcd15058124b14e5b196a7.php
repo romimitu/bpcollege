@@ -7,8 +7,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 <div id="department">
 	<div class="container">
 		<div id="banner-holder" class="transparent-banner">
-		    <h2 id="dept-title">Institute of Information and Communication Technology</h2>
-		    <div class="breadcrumb"><a href="/">Academics</a> / Institutes / IICT / Faculty</div>
+		    <h2 id="dept-title">আমাদের সম্পর্কে</h2>
+		    <div class="breadcrumb"><a href="/overview">আমাদের সম্পর্কে</a> / কলেজ স্টাফ</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -18,22 +18,24 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-12">
 								<div class="department-faculty">
-									<h2 id="mobile-dept-title" class="mobile-view">Institute of Information and Communication Technology</h2>
-		    						<div class="mobile-breadcrumb mobile-view"><a href="/">Academics</a> / IICT</div>		    						
-									<h2>Faculty</h2>
 									<ul id="og-grid" class="faculty-member og-grid">
+										<?php $__currentLoopData = $teams; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $team): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>									
 										<li>
-											<a href="#" data-largesrc="images/staff/large/" data-title="Dr Mohammad Shahidur Rahman " data-designation="Director" data-description="<h3 class=contact-info-h3>Contact Information:</h3>
+											<a href="#" data-largesrc="images/staff/large/" data-title="<?php echo e($team->name); ?> " data-designation="<?php echo e($team->position); ?>" data-description="
+												<h3 class=contact-info-h3>Contact Information: <?php echo e($team->contact_details); ?></h3>
+												<p><?php echo e($team->description); ?></p>
 												<ul class=contact-info-ul>
-													<li>Phone: /254/ 713582</li><li>Email: rahmanms@sust.edu</li>
+													<li>ID No: <?php echo e($team->idno); ?></li><li>Email: <?php echo e($team->email); ?></li>
+													<li>Phone: <?php echo e($team->name); ?></li><li>Facebook: <?php echo e($team->facebook); ?></li>
 												</ul>">
 												<div class="staff-thumb">
-													<img src="../../../uploads/profile-images/institute-office-1463005061.jpg" class="img-responsive" alt=""/>
+													<img src="/<?php echo e($team->image); ?>" class="img-responsive" alt=""/>
 													<span><i></i></span>
 												</div>
-												<h4>Dr Mohammad Shahidur Rahman  <span class="designation">Director</span></h4>
+												<h4><?php echo e($team->name); ?>  <span class="designation"><?php echo e($team->position); ?></span></h4>
 											</a>
 										</li>
+										<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 									</ul>
 								</div>
 							</div>

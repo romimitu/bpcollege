@@ -4,7 +4,7 @@
     <div class="page-header-inner ">
         <!-- BEGIN LOGO -->
         <div class="page-logo">
-            <a href="index.html"><img src="/admin/images/logo-light.png" alt="logo" class="logo-default" /></a>
+            <h1><a href="/home">Binodpur Collage</a></h1>
         </div>
         <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
         <div class="page-top">

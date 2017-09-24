@@ -161,7 +161,7 @@
 	#full-footer #footer p{text-align: center;}
 	.sl-slider-wrapper, .large-screen-slider, .bx-wrapper{display: none;}
 	.home-mobile-slider{display: block;}
-	#banner-holder{min-height: inherit; background-color: transparent;}
+	#banner-holder{min-height: inherit; background-color: transparent;display: none;}
 	#news-events-holder ul.news > li > div > .date{display: table; margin: 0px auto; width: initial;}
 	#news-events-holder ul.news > li > div > .desc{display: table; margin: 10px auto 0px; text-align: center;}
 	#news-events-holder ul.news > li > div > .desc > a{float: none;}

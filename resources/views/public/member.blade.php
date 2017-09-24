@@ -7,8 +7,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 <div id="department">
 	<div class="container">
 		<div id="banner-holder" class="transparent-banner">
-		    <h2 id="dept-title">Institute of Information and Communication Technology</h2>
-		    <div class="breadcrumb"><a href="/">Academics</a> / Institutes / IICT / Faculty</div>
+		    <h2 id="dept-title">আমাদের সম্পর্কে</h2>
+		    <div class="breadcrumb"><a href="/overview">আমাদের সম্পর্কে</a> / কলেজ স্টাফ</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
@@ -18,22 +18,24 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-12">
 								<div class="department-faculty">
-									<h2 id="mobile-dept-title" class="mobile-view">Institute of Information and Communication Technology</h2>
-		    						<div class="mobile-breadcrumb mobile-view"><a href="/">Academics</a> / IICT</div>		    						
-									<h2>Faculty</h2>
 									<ul id="og-grid" class="faculty-member og-grid">
+										@foreach($teams as $team)									
 										<li>
-											<a href="#" data-largesrc="images/staff/large/" data-title="Dr Mohammad Shahidur Rahman " data-designation="Director" data-description="<h3 class=contact-info-h3>Contact Information:</h3>
+											<a href="#" data-largesrc="images/staff/large/" data-title="{{$team->name}} " data-designation="{{$team->position}}" data-description="
+												<h3 class=contact-info-h3>Contact Information: {{$team->contact_details}}</h3>
+												<p>{{$team->description}}</p>
 												<ul class=contact-info-ul>
-													<li>Phone: /254/ 713582</li><li>Email: rahmanms@sust.edu</li>
+													<li>ID No: {{$team->idno}}</li><li>Email: {{$team->email}}</li>
+													<li>Phone: {{$team->name}}</li><li>Facebook: {{$team->facebook}}</li>
 												</ul>">
 												<div class="staff-thumb">
-													<img src="../../../uploads/profile-images/institute-office-1463005061.jpg" class="img-responsive" alt=""/>
+													<img src="/{{$team->image}}" class="img-responsive" alt=""/>
 													<span><i></i></span>
 												</div>
-												<h4>Dr Mohammad Shahidur Rahman  <span class="designation">Director</span></h4>
+												<h4>{{$team->name}}  <span class="designation">{{$team->position}}</span></h4>
 											</a>
 										</li>
+										@endforeach
 									</ul>
 								</div>
 							</div>

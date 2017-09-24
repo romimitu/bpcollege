@@ -1,6 +1,6 @@
  <!-- BEGIN FOOTER -->
 <div class="page-footer">
-    <div class="page-footer-inner"> 2016 &copy; Metronic Theme By</div>
+    <div class="page-footer-inner"> 2017 &copy; Developed By <a href="http://facebook.com/romi.mitu"></a></div>
     <div class="scroll-to-top"><i class="icon-arrow-up"></i></div>
 </div>
 <!-- END FOOTER -->
