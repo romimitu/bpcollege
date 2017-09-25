@@ -537,7 +537,7 @@ transition: all .5s ease-in;
 
 #academics-holder h4{ color: #FFF; font-size: 22px; font-weight: 300; line-height: 25px; letter-spacing: 1px; text-align: center; margin: 0px 0px 20px; }
 
-#academics-holder #dept-list-container{background-color: #03305D; width: 100%; float: left; min-height: 409px;}
+#academics-holder #dept-list-container{background-color: #03305D; width: 100%; float: left;}
 #academics-holder #dept-list-container h3{color: #e2161e; background-color: #fff; padding: 12px; font-size: 20px; margin-top: 0; margin-bottom: 0; font-family: 'Open Sans', sans-serif;}
 #academics-holder #dept-list-container h3::after{content: ''; background-image: url(/images/icons/active-down.png); width: 24px; height: 24px; display: block; margin-bottom: -28px;}
 #academics-holder #dept-list-container ul{/*width: 80%;*/}

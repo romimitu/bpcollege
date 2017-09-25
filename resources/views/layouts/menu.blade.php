@@ -42,26 +42,28 @@
 		</div>	
 		<div class="collapse navbar-collapse js-navbar-collapse">
 		    <ul class="nav navbar-nav navbar-right">
-		    	<li><a href="/">Home</a></li>
+		    	<li><a href="/">নীড় পাতা</a></li>
 			    <li class="dropdown">
-			      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+			      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">আমাদের সম্পর্কে <span class="caret"></span></a>
 		      		<ul class="dropdown-menu" role="menu">
-				        <li><a href="/overview">Overview</a></li>
-				        <li><a href="/facts-acts">Facts & Acts</a></li>
-				        <li><a href="/mission">Our Mission</a></li>
-				        <li><a href="/location">Location</a></li>
+				        <li><a href="/overview">ইতিহাস</a></li>
+				        <li><a href="/facts-acts">কলেজ সম্পর্কে </a></li>
+				        <li><a href="/mission">লক্ষ্য ও উদ্দেশ্য</a></li>
+				        <li><a href="/location">অবস্থান </a></li>
 			      	</ul>
 			    </li>
 			    <li class="dropdown">
-			      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Information <span class="caret"></span></a>
+			      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">তথ্যসমূহ <span class="caret"></span></a>
 		      		<ul class="dropdown-menu" role="menu">
-				        <li><a href="/notice-board">Notice Board</a></li>
-				        <li><a href="/news-events">News & Events</a></li>
-				        <li><a href="/photo-gallery">Photo Gallery</a></li>
+				        <li><a href="/notice-board">নোটিশ বোর্ড</a></li>
+				        <li><a href="/news-events">নিউজ ও ইভেন্ট </a></li>
+				        <li><a href="/photo-gallery">ছবিঘর</a></li>
 			      	</ul>
 			    </li>
-		    	<li><a href="/staff">Collage Staff</a></li>
-		    	<li><a href="/contact">Contact</a></li>
+		    	<li><a href="/staff">কলেজ স্টাফ</a></li>
+		    	<li><a href="/staff">কোর্সসমূহ</a></li>
+		    	<li><a href="/staff">রেজাল্ট</a></li>
+		    	<li><a href="/contact">যোগাযোগ</a></li>
 		  	</ul>
 		</div><!-- /.nav-collapse -->
 	</nav>

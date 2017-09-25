@@ -22,6 +22,12 @@
                     <h3 class="uppercase">Features</h3>
                 </li>
                 <li class="nav-item  ">
+                    <a href="/aboutcollege">
+                        <i class="icon-feed"></i>
+                        <span class="title">About College</span>
+                    </a>
+                </li>
+                <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-diamond"></i>
                         <span class="title">Department</span>

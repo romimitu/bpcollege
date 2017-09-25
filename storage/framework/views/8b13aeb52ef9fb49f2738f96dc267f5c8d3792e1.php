@@ -40,7 +40,6 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 										</tr>
 									</tbody>
 								</table>
-								<h3>Degrees</h3>
 								<table>
 									<tbody>
 										<tr>

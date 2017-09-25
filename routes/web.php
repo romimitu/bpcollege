@@ -29,6 +29,8 @@ Route::resource('page','PageController');
 Route::resource('department','DepartmentController');
 Route::resource('member','TeamController');
 Route::get('message','AdminController@ContactMessage');
+Route::get('aboutcollege/{id}/edit','AdminController@ViewAboutPage');
+Route::get('aboutcollege/{id}','AdminController@EditAboutPage');
 
 
 /* Public Routes */

@@ -27,6 +27,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                         </div>
                         <div class="portlet-body form">
                             <p>Welcome To Binodpur College Admin Panel, <?php echo e(Auth::user()->name); ?> !!! U R now logged in !!!!</p>
+                            <a href="aboutcollege/1/edit">Edit College info</a>
                         </div>
                     </div>
                 </div>
