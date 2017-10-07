@@ -27,7 +27,7 @@
         <?php echo Form::label('contact_details', 'Contact Details', ['class'=>'col-sm-2 control-label']); ?>
 
         <div class="col-md-10">
-            <?php echo Form::textarea('contact_details',isset($member->contact_details) ? $member->contact_details : null,['class'=> 'form-control details']); ?>
+            <?php echo Form::text('contact_details',isset($member->contact_details) ? $member->contact_details : null,['class'=> 'form-control']); ?>
 
         </div>
     </div>

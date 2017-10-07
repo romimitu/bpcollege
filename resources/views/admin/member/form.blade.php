@@ -20,7 +20,7 @@
     <div class="form-group">
         {!! Form::label('contact_details', 'Contact Details', ['class'=>'col-sm-2 control-label']) !!}
         <div class="col-md-10">
-            {!! Form::textarea('contact_details',isset($member->contact_details) ? $member->contact_details : null,['class'=> 'form-control details']) !!}
+            {!! Form::text('contact_details',isset($member->contact_details) ? $member->contact_details : null,['class'=> 'form-control']) !!}
         </div>
     </div>
     <div class="form-group">

@@ -14,7 +14,7 @@ class CreateMembersTable extends Migration
             $table->string('idno');
             $table->string('position');
             $table->text('description');
-            $table->text('contact_details');
+            $table->string('contact_details');
             $table->text('image')->nullable();
             $table->string('email');
             $table->string('facebook');

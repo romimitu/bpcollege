@@ -61,8 +61,8 @@
 			      	</ul>
 			    </li>
 		    	<li><a href="/staff">কলেজ স্টাফ</a></li>
-		    	<li><a href="/staff">কোর্সসমূহ</a></li>
-		    	<li><a href="/staff">রেজাল্ট</a></li>
+		    	<li><a href="/">কোর্সসমূহ</a></li>
+		    	<li><a href="/">রেজাল্ট</a></li>
 		    	<li><a href="/contact">যোগাযোগ</a></li>
 		  	</ul>
 		</div><!-- /.nav-collapse -->

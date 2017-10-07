@@ -24,6 +24,9 @@ class CreateAboutTable extends Migration
             $table->string('student');
             $table->text('history');
             $table->text('mission');
+            $table->text('about_img');
+            $table->text('mission_img');
+            $table->text('facts_img');
             $table->string('facebook');
             $table->string('google');
             $table->string('twitter');

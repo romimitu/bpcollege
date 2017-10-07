@@ -21,7 +21,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 									<ul id="og-grid" class="faculty-member og-grid">
 										<?php $__currentLoopData = $teams; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $team): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>									
 										<li>
-											<a href="#" data-largesrc="images/staff/large/" data-title="<?php echo e($team->name); ?> " data-designation="<?php echo e($team->position); ?>" data-description="
+											<a href="#" data-largesrc="images/staff/large/" data-description="
 												<h3 class=contact-info-h3>Contact Information: <?php echo e($team->contact_details); ?></h3>
 												<p><?php echo e($team->description); ?></p>
 												<ul class=contact-info-ul>

@@ -16,21 +16,6 @@ class AdminController extends Controller
         $this->middleware('auth');
     }
 
-    public function ViewAboutPage($id)
-    {
-        $about = About::findOrFail($id);
-        return view('admin.facts', ['about' => $about]);
-    }
-
-    public function EditAboutPage(Request $request, $id)
-    {
-        $about = About::findOrFail($id);
-        $about->fill($request->all());
-        $about->update();
-        Session::flash('message', 'Succesfully updated');
-        return redirect('/aboutcollege/1/edit');
-    }
-
     public function ContactMessage()
     {
         $messages = Contact::orderBy('created_at', 'asc')->paginate(10);

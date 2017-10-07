@@ -21,7 +21,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 									<ul id="og-grid" class="faculty-member og-grid">
 										@foreach($teams as $team)									
 										<li>
-											<a href="#" data-largesrc="images/staff/large/" data-title="{{$team->name}} " data-designation="{{$team->position}}" data-description="
+											<a href="#" data-largesrc="images/staff/large/" data-description="
 												<h3 class=contact-info-h3>Contact Information: {{$team->contact_details}}</h3>
 												<p>{{$team->description}}</p>
 												<ul class=contact-info-ul>

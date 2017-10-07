@@ -9,7 +9,7 @@
     {
         if($request->$file!=null)
         {
-            $fileName = str_slug($title,'-').'-'.time() . '.' . $request->$file->getClientOriginalExtension();
+            $fileName = str_slug($title,'-').'-'.time() . '-' . $request->$file->getClientOriginalName();
             $request->$file->move(public_path($path), $fileName);
             return $path.$fileName;
         }
