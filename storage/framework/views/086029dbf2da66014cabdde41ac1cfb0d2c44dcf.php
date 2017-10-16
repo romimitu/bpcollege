@@ -2,28 +2,32 @@
 	<div id="prefooter">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<ul class="content">
-						<li>
-							<div>
-								<h3>About Us</h3>
-								<ul>
-									<li class=""><a href="about.html">Overview</a></li>
-									<li class=""><a href="about/university-facts-acts.html">University Facts &amp; Acts</a></li>											
-								</ul>
-							</div>
-						</li>
-						<li>
-							<div>
-								<h3>Admission</h3>
-								<ul>
-									<li class=""><a href="admission.html">Undergraduate Apply</a></li>
-									<li class=""><a href="admission/undergraduate-admission.html">Undergraduate Admission</a></li>
-								</ul>
-							</div>
-						</li>
+				<div class="col-sm-4">
+					<h2>কলেজ সম্পর্কে</h2>
+					<ul>
+				        <li><a href="/overview">ইতিহাস</a></li>
+				        <li><a href="/facts-acts">কলেজ সম্পর্কে </a></li>
+				        <li><a href="/mission">লক্ষ্য ও উদ্দেশ্য</a></li>
+				        <li><a href="/location">অবস্থান </a></li>	
 					</ul>
-				</div><!-- End .col -->
+				</div>
+				<div class="col-sm-4">
+					<h2>অন্যান্য পাতা</h2>
+					<ul>
+				        <li><a href="/notice-board">নোটিশ বোর্ড</a></li>
+				        <li><a href="/news-events">নিউজ ও ইভেন্ট </a></li>
+				        <li><a href="/photo-gallery">ছবিঘর</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2>গুরুত্বপূর্ণ লিঙ্ক</h2>
+					<ul>
+				        <li><a href="http://moedu.gov.bd">শিক্ষা মন্ত্রণালয়</a></li>
+				        <li><a href="http://dshe.gov.bd">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</a></li>
+				        <li><a href="http://nu.edu.bd">জাতীয় বিশ্ববিদ্যালয়</a></li>
+				        <li><a href="http://rajshahieducationboard.gov.bd">মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, রাজশাহী</a></li>
+					</ul>
+				</div>
 			</div><!-- End .row -->
 		</div><!-- End .container -->
 	</div><!-- End #prefooter -->			
@@ -34,10 +38,7 @@
 					<p class="text-left">&copy; 2017 Binodpur College. All rights reserved.</p>
 				</div><!-- End .col -->
 				<div class="col-xs-12 col-sm-8 col-md-8">
-					<ul class="links">
-						<li class=""><a href="/gallery">Gallery</a></li>
-						<li class=""><a href="/Contact">Contact Us</a></li>
-					</ul>
+					<p class="text-right">Developed By-<a href="http://facebook.com/romi.mitu">RoMi</a></p>
 				</div><!-- End .col -->
 			</div><!-- End .row -->
 		</div><!-- End .container -->

@@ -22,12 +22,13 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<div class="contact_address_container">
 								<img src="../images/logo.png">
 								<ul>
-									<li><strong>Binodpur College</strong></li>
-									<li>Binodpur-kansat Road, Lachmanpur, Binodpur,</li>
-									<li>Shibgonj, Chapainawabganj, 6342</li>
-									<li><strong>Phone : </strong>017xxxxxx</li>
-									<li><strong>Website : </strong>www.bdcsc.edu.bd</li>
-									<li><strong>E-mail : </strong>info@bdcsc.edu.bd</li>
+								@foreach($collegeinfo as $info)
+									<li><strong>{{$info->collageName }}</strong></li>
+									<li>{{$info->location }}</li>
+									<li><strong>মোবাইল : </strong>{{$info->mobile }}</li>
+									<li><strong>ওয়েবসাইট : </strong>www.bdcsc.edu.bd</li>
+									<li><strong>ই-মেইল : </strong>{{$info->email }}</li>
+								@endforeach
 								</ul>
 							</div>
 							<div class="contact_address_container">

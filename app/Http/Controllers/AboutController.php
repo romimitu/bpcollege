@@ -49,6 +49,7 @@ class AboutController extends Controller
         $data = $request->except('about_img','mission_img','facts_img'); 
         if ($request->hasFile('about_img','mission_img','facts_img'))
         {            
+            $data['about_img']=uploadFile('principal_msg',$request,'uploads/');
             $data['about_img']=uploadFile('about_img',$request,'uploads/page/');
             $data['mission_img']=uploadFile('mission_img',$request,'uploads/page/');
             $data['facts_img']=uploadFile('facts_img',$request,'uploads/page/');

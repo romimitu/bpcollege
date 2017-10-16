@@ -15,13 +15,15 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 				<div id="department-container">
 					<?php echo $__env->make('layouts.sidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 					<div class="department-section">
-						<!-- Banner Image -->
-					<img src="/images/overview.jpg" class="banner-image">
+					<?php $__currentLoopData = $collegeinfo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+						<img src="<?php echo e($info->mission_img); ?>" class="banner-image">
 						<div class="department-overview">
 							<h2 id="mobile-dept-title" class="mobile-view">আমাদের সম্পর্কে</h2>
 							<h2>উদ্দেশ্য</h2>
-							<p>এই কলেজকে বি,এসসি তে উন্নীত করার পরিকল্পনা রয়েছে।﻿</p>
+						  	<?php echo $info->mission; ?>
+
 						</div><!-- End .department-overview -->
+					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 					</div><!-- End .department-section -->
 				</div><!-- End #department-container -->
 			</div><!-- End .col -->

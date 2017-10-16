@@ -19,6 +19,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
         </div>
         <!-- Mobile Slider End -->  
 	</div><!-- End #banner-holder -->
+	<?php $__currentLoopData = $collegeinfo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 	<div id="wt-text-holder">
 		<div class="container">
 			<div class="row">
@@ -29,24 +30,30 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 						<li id="achievement-li"><a href="#achivements" data-toggle="tab"><i class="fa fa-gift"></i><h6>অধ্যক্ষ এর কথা</h6></a></li>
 					</ul>
 				</div><!-- End .col -->
-				<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="col-xs-12 col-sm-9 col-md-9">
 					<!-- Tab panes -->
 					<div id="home-tab-content" class="tab-content">
 						<div class="tab-pane fade in active" id="overview">
 							<!-- <h1>Overview</h1> -->
-							<p>চাঁপাইনবাবগঞ্জ জেলার শিবগঞ্জ উপজেলাধীন ৮নং বিনোদপুর উনিয়নের অর্ন্তগত লছমানপুর গ্রামে বিনোদপুর কলেজ অবস্থিত। এই কলেজ ১৯৮৬ সালে স্থাপিত হয়।<br>বর্তমানে ২.৭৯ একর জমির উপর ৩টি পাঁকা ভবন, ১টি দ্বীতল ভবন এবং ২টি টিন সেট ভবন আছে। এই কলেজের চারপাশে আমবাগান এবং একটি পাঁকা রাস্তা আছে।</p>
+							<?php echo $info->about; ?>
+
 							<a class="more" href="/overview">আরো পড়ুন </a>
 						</div><!-- END .tab-pane #research -->
 						<div class="tab-pane fade" id="achivements">
 							<h1>অধ্যক্ষ এর কথা</h1>
-							<p>Through research, academic, and various extra- curricular activities, Shahjalal University of Science & Technology faculty and students achieved many awards and recognition. </p>
-							<a class="more" href="about/">আরো পড়ুন </a>
+							<div class="col-sm-3">
+								<img src="<?php echo e($info->principal_img); ?>" alt="" class="img-responsive">
+							</div>
+							<div class="col-sm-9">
+								<?php echo $info->principal_msg; ?>
+
+								<a class="more" href="about/">আরো পড়ুন </a>
+							</div>
 						</div><!-- END .tab-pane #achivements -->
 					</div><!-- END .tab-content -->
 				</div><!-- End .col -->
 			</div><!-- End .row -->
 		</div><!-- End .container -->
-		<span id="bg-tab"></span>
 	</div><!-- End #wt-text-holder -->		
 	<div id="academics-holder">
 		<div class="container">
@@ -58,32 +65,32 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<table class="table table-bordered">
 								<tbody>
 									<tr>
-										<td>Established:</td>
-										<td>1986</td>
+										<td>স্থাপিত: </td>
+										<td>১৯৮৬</td>
 									</tr>
 									<tr>
-										<td>Area:</td>
-										<td>189 hundredth</td>
+										<td>আয়তন: </td>
+										<td><?php echo e($info->area); ?></td>
 									</tr>
 									<tr>
-										<td>Location:</td>
-										<td>Binodpur, Shibgonj, Chapainawabganj</td>
+										<td>অবস্থান: </td>
+										<td><?php echo e($info->location); ?></td>
 									</tr>
 									<tr>
-										<td>Courses:</td>
-										<td>HSC, BA, BSS, BBS</td>
+										<td>কোর্সসমূহ: </td>
+										<td><?php echo e($info->course); ?></td>
 									</tr>
 									<tr>
-										<td>Teachers:</td>
-										<td>50</td>
+										<td>শিক্ষক: </td>
+										<td><?php echo e($info->teacher); ?></td>
 									</tr>
 									<tr>
-										<td>Staff:</td>
-										<td>28</td>
+										<td>অন্যান্য কর্মচারী: </td>
+										<td><?php echo e($info->staff); ?></td>
 									</tr>
 									<tr>
-										<td>Students:</td>
-										<td>1229</td>
+										<td>ছাত্র-ছাত্রী: </td>
+										<td><?php echo e($info->student); ?></td>
 									</tr>
 								</tbody>
 							</table>
@@ -95,32 +102,32 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 							<table class="table table-bordered">
 								<tbody>
 									<tr>
-										<td>Established:</td>
+										<td>স্থাপিত: </td>
 										<td>1986</td>
 									</tr>
 									<tr>
-										<td>Area:</td>
-										<td>189 hundredth</td>
+										<td>আয়তন: </td>
+										<td><?php echo e($info->area); ?></td>
 									</tr>
 									<tr>
-										<td>Location:</td>
-										<td>Binodpur, Shibgonj, Chapainawabganj</td>
+										<td>অবস্থান: </td>
+										<td><?php echo e($info->location); ?></td>
 									</tr>
 									<tr>
-										<td>Courses:</td>
-										<td>HSC, BA, BSS, BBS</td>
+										<td>কোর্সসমূহ: </td>
+										<td><?php echo e($info->course); ?></td>
 									</tr>
 									<tr>
-										<td>Teachers:</td>
-										<td>50</td>
+										<td>শিক্ষক: </td>
+										<td><?php echo e($info->teacher); ?></td>
 									</tr>
 									<tr>
-										<td>Staff:</td>
-										<td>28</td>
+										<td>অন্যান্য কর্মচারী: </td>
+										<td><?php echo e($info->staff); ?></td>
 									</tr>
 									<tr>
-										<td>Students:</td>
-										<td>1229</td>
+										<td>ছাত্র-ছাত্রী: </td>
+										<td><?php echo e($info->student); ?></td>
 									</tr>
 								</tbody>
 							</table>
@@ -130,7 +137,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 			</div><!-- End .row -->
 		</div><!-- End .container -->
 	</div><!-- End #academics-holder -->
-
+	<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 	<div id="news-events-holder">
 		<div class="container">
 			<div class="row">

@@ -498,7 +498,7 @@ transition: all .5s ease-in;
 #wt-text-holder ul.tab-nav > li.active > a > div > p { display: block; }
 
 /* Tab Pane*/
-#home-tab-content{width: 83%; margin-top: 20px;}
+#home-tab-content{margin-top: 20px;}
 #wt-text-holder h1{ color: #202633; font-size: 32px; font-weight: 400; line-height: 40px; letter-spacing: 1px; margin: 0px 0px 20px; font-family: 'Open Sans', sans-serif;}
 
 /* wt-text-holder End */
@@ -1329,7 +1329,7 @@ transition: all 3s;
 .write ul li ul li{display: inline-block; margin-right: 5px; margin-bottom: 7px; width: 48%;}
 .write ul li ul li input[type="text"],.write ul li ul li input[type="email"]{background-color: #f5f4f4; width: 100%; /*width: 435px;*/ height: 55px; border: 0; padding: 5px 5px 5px 10px; font-size: 17px; font-family: 'Lato', sans-serif; font-weight: 100; display: block;}
 .write ul li textarea{background-color: #f5f4f4;/* width: 880px;*/ width: 97%; height: 200px; border: 0; padding: 5px 5px 5px 10px; font-size: 17px; font-family: 'Lato', sans-serif; font-weight: 100; margin-bottom: 7px; display: block;}
-.write input[type="submit"]{background-color: #202633; color: #fff; border-radius: 3px; border: 0px; float: left; padding: 10px 25px; margin-bottom: 100px;}
+.write input[type="submit"]{background-color: #202633; color: #fff; border-radius: 3px; border: 0px; float: left; padding: 10px 25px;}
 .write input[type="submit"]:hover{color: #d50d15;}
 
 .write ul li ul li select{width: 100%; height: 55px; background-color: #f5f4f4; padding: 5px 5px 5px 10px; border-color: transparent;}

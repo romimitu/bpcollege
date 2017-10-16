@@ -41,8 +41,16 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                         <td>{{ $about->collageName }}</td>
                                     </tr>
                                     <tr>
-                                        <td>Established</td>
-                                        <td>{{ $about->established }}</td>
+                                        <td>About Collage (indexPage)</td>
+                                        <td>{{ $about->about }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>principal Message</td>
+                                        <td>{{ $about->principal_msg }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>principal Image</td>
+                                        <td><img src="{{ $about->principal_img }}" alt="" width="150px"></td>
                                     </tr>
                                     <tr>
                                         <td>Location/Address</td>

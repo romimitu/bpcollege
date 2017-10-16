@@ -16,7 +16,8 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 					@include('layouts.sidebar')
 					<div class="department-section">
 						<!-- Banner Image -->
-						<img src="/images/overview.jpg" class="banner-image">
+						@foreach($collegeinfo as $info)
+						<img src="{{ $info->facts_img }}" class="banner-image">
 						<div class="department-overview">
 							<h2 id="mobile-dept-title" class="mobile-view">আমাদের সম্পর্কে</h2>
 							<h2>তথ্যসমূহ</h2>
@@ -24,48 +25,49 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 								<table>
 									<tbody>
 										<tr>
-											<td>Established</td>
+											<td>স্থাপিত</td>
 											<td>:</td>
-											<td>1986</td>
+											<td>১৯৮৬</td>
 										</tr>
 										<tr>
-											<td>Area</td>
+											<td>আয়তন</td>
 											<td>:</td>
-											<td>189 hundredth</td>
+											<td>{{$info->area }}</td>
 										</tr>
 										<tr>
-											<td>Location</td>
+											<td>অবস্থান</td>
 											<td>:</td>
-											<td>Binodpur, Shibgonj, Chapainawabganj</td>
+											<td>{{$info->location }}</td>
 										</tr>
 									</tbody>
 								</table>
 								<table>
 									<tbody>
 										<tr>
-											<td>Courses</td>
+											<td>কোর্সসমূহ</td>
 											<td>:</td>
-											<td>HSC, BA, BSS, BBS</td>
+											<td>{{$info->course }}</td>
 										</tr>
 										<tr>
-											<td>Teachers</td>
+											<td>শিক্ষক</td>
 											<td>:</td>
-											<td>50</td>
+											<td>{{$info->teacher }}</td>
 										</tr>
 										<tr>
-											<td>Staff</td>
+											<td>অন্যান্য কর্মচারী</td>
 											<td>:</td>
-											<td>28</td>
+											<td>{{$info->staff }}</td>
 										</tr>
 										<tr>
-											<td>Students</td>
+											<td>ছাত্র-ছাত্রী </td>
 											<td>:</td>
-											<td>1229</td>
+											<td>{{$info->student }}</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
+						@endforeach
 					</div>
 				</div><!-- End #department-container -->
 			</div><!-- End .col -->

@@ -14,10 +14,10 @@
 					<div class="top-nav">
 						<h1>Binodpur College</h1>
 						<ul>
-							<li><a href=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-							<li><a href=""><i class="fa fa-twitter"></i></a></li>
-							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						@foreach($collegeinfo as $info)
+							<li><a href="{{ $info->facebook }}"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="{{ $info->twitter }}"><i class="fa fa-twitter"></i></a></li>
+						@endforeach
 							<li>
 								<form class="navbar-form navbar-left" role="search">
 								    <div class="form-group">

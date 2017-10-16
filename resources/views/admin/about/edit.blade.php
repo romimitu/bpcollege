@@ -86,16 +86,12 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    {!! Form::label('established', 'Established', ['class'=>'col-sm-2 control-label']) !!}
-                                    <div class="col-md-2">
-                                        {!! Form::text('established',isset($about->established) ? $about->established : null,['class'=> 'form-control']) !!}
-                                    </div>
                                     {!! Form::label('facebook', 'Facebook URL', ['class'=>'col-sm-2 control-label']) !!}
-                                    <div class="col-md-2">
+                                    <div class="col-md-4">
                                         {!! Form::text('facebook',isset($about->facebook) ? $about->facebook : null,['class'=> 'form-control']) !!}
                                     </div>
                                     {!! Form::label('twitter', 'twitter URL', ['class'=>'col-sm-2 control-label']) !!}
-                                    <div class="col-md-2">
+                                    <div class="col-md-4">
                                         {!! Form::text('twitter',isset($about->twitter) ? $about->twitter : null,['class'=> 'form-control']) !!}
                                     </div>
                                 </div>
@@ -103,6 +99,12 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     {!! Form::label('map', 'Google Map', ['class'=>'col-sm-2 control-label']) !!}
                                     <div class="col-md-10">
                                         {!! Form::text('map',isset($about->map) ? $about->map : null,['class'=> 'form-control']) !!}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {!! Form::label('about', 'College About', ['class'=>'col-sm-2 control-label']) !!}
+                                    <div class="col-md-10">
+                                        {!! Form::textarea('about',isset($about->about) ? $about->about : null,['class'=> 'form-control details']) !!}
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -115,6 +117,23 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     {!! Form::label('mission', 'Mission/Vision', ['class'=>'col-sm-2 control-label']) !!}
                                     <div class="col-md-10">
                                         {!! Form::textarea('mission',isset($about->mission) ? $about->mission : null,['class'=> 'form-control details']) !!}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {!! Form::label('principal_msg', 'Principal Message', ['class'=>'col-sm-2 control-label']) !!}
+                                    <div class="col-md-10">
+                                        {!! Form::textarea('principal_msg',isset($about->principal_msg) ? $about->principal_msg : null,['class'=> 'form-control details']) !!}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {!! Form::label('principal_img', 'Principal Image', ['class'=>'col-sm-2 control-label']) !!}
+                                    <div class="col-md-10">
+                                        @if(isset($about->principal_img))
+                                            <img src="/{{$about->principal_img}}" alt="" />
+                                        @else
+                                            <img src="http://www.placehold.it/200x150/" alt="" />
+                                        @endif
+                                        {!! Form::file('principal_img') !!} 
                                     </div>
                                 </div>
                                 <div class="form-group">

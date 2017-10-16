@@ -16,6 +16,9 @@ class CreateAboutTable extends Migration
         Schema::create('abouts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('collageName');
+            $table->text('about');
+            $table->text('principal_msg');
+            $table->string('principal_img');
             $table->string('location');
             $table->string('area');
             $table->string('course');
@@ -28,7 +31,6 @@ class CreateAboutTable extends Migration
             $table->text('mission_img');
             $table->text('facts_img');
             $table->string('facebook');
-            $table->string('google');
             $table->string('twitter');
             $table->string('email');
             $table->string('mobile');

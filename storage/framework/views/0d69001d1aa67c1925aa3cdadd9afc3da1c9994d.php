@@ -14,10 +14,10 @@
 					<div class="top-nav">
 						<h1>Binodpur College</h1>
 						<ul>
-							<li><a href=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-							<li><a href=""><i class="fa fa-twitter"></i></a></li>
-							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						<?php $__currentLoopData = $collegeinfo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+							<li><a href="<?php echo e($info->facebook); ?>"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="<?php echo e($info->twitter); ?>"><i class="fa fa-twitter"></i></a></li>
+						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 							<li>
 								<form class="navbar-form navbar-left" role="search">
 								    <div class="form-group">
