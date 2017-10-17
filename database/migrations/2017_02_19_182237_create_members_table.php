@@ -16,8 +16,8 @@ class CreateMembersTable extends Migration
             $table->text('description');
             $table->string('contact_details');
             $table->text('image')->nullable();
-            $table->string('email');
-            $table->string('facebook');
+            $table->string('email')->nullable();
+            $table->string('facebook')->nullable();
             $table->timestamps();
         });
     }

@@ -140,7 +140,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     {!! Form::label('about_img', 'History Page Image', ['class'=>'col-sm-2 control-label']) !!}
                                     <div class="col-md-10">
                                         @if(isset($about->about_img))
-                                            <img src="/{{$about->about_img}}" alt="" />
+                                            <img src="/{{$about->about_img}}" class="img-responsive" />
                                         @else
                                             <img src="http://www.placehold.it/200x150/" alt="" />
                                         @endif
@@ -151,7 +151,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     {!! Form::label('mission_img', 'Mission Page Image', ['class'=>'col-sm-2 control-label']) !!}
                                     <div class="col-md-10">
                                         @if(isset($about->mission_img))
-                                            <img src="/{{$about->mission_img}}" alt="" />
+                                            <img src="/{{$about->mission_img}}" class="img-responsive" />
                                         @else
                                             <img src="http://www.placehold.it/200x150/" alt="" />
                                         @endif
@@ -162,7 +162,7 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
                                     {!! Form::label('facts_img', 'Facts Page Image', ['class'=>'col-sm-2 control-label']) !!}
                                     <div class="col-md-10">
                                         @if(isset($about->facts_img))
-                                            <img src="/{{$about->facts_img}}" alt="" />
+                                            <img src="/{{$about->facts_img}}" class="img-responsive" />
                                         @else
                                             <img src="http://www.placehold.it/200x150/" alt="" />
                                         @endif

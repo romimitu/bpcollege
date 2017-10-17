@@ -49,7 +49,9 @@ class BlogController extends Controller
     public function update(BlogRequest $request, Blog $blog)
     {
         $data = $request->except('image'); 
-        $data['image']=uploadFile('image',$request,'uploads/blog/');
+        if ($request->hasFile('image')){
+            $data['image']=uploadFile('image',$request,'uploads/blog/');
+        }        
         $blog->update($data);
         Session::flash('message', 'Succesfully updated');
         return redirect('/blog');

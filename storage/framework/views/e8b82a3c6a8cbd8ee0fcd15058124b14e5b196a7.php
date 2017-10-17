@@ -25,8 +25,14 @@ BINODPUR COLLEGE | Shibgonj, Chapainawabganj
 												<h3 class=contact-info-h3>Contact Information: <?php echo e($team->contact_details); ?></h3>
 												<p><?php echo e($team->description); ?></p>
 												<ul class=contact-info-ul>
-													<li>ID No: <?php echo e($team->idno); ?></li><li>Email: <?php echo e($team->email); ?></li>
-													<li>Phone: <?php echo e($team->name); ?></li><li>Facebook: <?php echo e($team->facebook); ?></li>
+													<li>ID No: <?php echo e($team->idno); ?></li>
+													<?php if($team->email): ?>
+													<li>Email: <?php echo e($team->email); ?></li>
+													<?php endif; ?>
+													<li>Phone: <?php echo e($team->name); ?></li>
+													<?php if($team->facebook): ?>
+													<li>Facebook: <?php echo e($team->facebook); ?></li>
+													<?php endif; ?>
 												</ul>">
 												<div class="staff-thumb">
 													<img src="/<?php echo e($team->image); ?>" class="img-responsive" alt=""/>

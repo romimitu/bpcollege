@@ -48,7 +48,9 @@ class noticeController extends Controller
     public function update(NoticeRequest $request, Notice $notice)
     {
         $data = $request->except('download_link'); 
-        $data['download_link']=uploadFile('download_link',$request,'uploads/notice/');
+        if ($request->hasFile('download_link')){
+            $data['download_link']=uploadFile('download_link',$request,'uploads/notice/');
+        }        
         $notice->update($data);
         Session::flash('message', 'Succesfully updated');
         return redirect('/notice');

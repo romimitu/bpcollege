@@ -46,13 +46,18 @@ class AboutController extends Controller
     public function update(Request $request, $id)
     {
         $about = About::find($id);
-        $data = $request->except('about_img','mission_img','facts_img'); 
-        if ($request->hasFile('about_img','mission_img','facts_img'))
-        {            
-            $data['about_img']=uploadFile('principal_msg',$request,'uploads/');
+        $data = $request->except('about_img','mission_img','facts_img','principal_img'); 
+        if ($request->hasFile('about_img')){
             $data['about_img']=uploadFile('about_img',$request,'uploads/page/');
+        }
+        if ($request->hasFile('mission_img')){
             $data['mission_img']=uploadFile('mission_img',$request,'uploads/page/');
+        } 
+        if ($request->hasFile('facts_img')){            
             $data['facts_img']=uploadFile('facts_img',$request,'uploads/page/');
+        } 
+        if ($request->hasFile('principal_img')){            
+            $data['principal_img']=uploadFile('principal_img',$request,'uploads/');
         } 
         $about->update($data);
         Session::flash('message', 'Succesfully updated');

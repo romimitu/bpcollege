@@ -48,7 +48,7 @@ class TeamController extends Controller
     public function update(MemberRequest $request, Member $member)
     {
         $data = $request->except('image'); 
-        if ($request->hasFile('about_img','mission_img','facts_img'))
+        if ($request->hasFile('image'))
         {
             $data['image']=uploadFile('image',$request,'uploads/member/');
         } 
